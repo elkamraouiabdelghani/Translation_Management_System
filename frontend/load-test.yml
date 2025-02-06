@@ -1,0 +1,18 @@
+config:
+  target: 'http://localhost:5000'
+  phases:
+    - duration: 60  # Durée du test en secondes
+      arrivalRate: 150  # Nombre d'utilisateurs par seconde
+scenarios:
+  - flow:
+      - get:
+          url: '/trans/get-trans/670796c1fcb0e56ae48ab749/app1'
+          headers: {
+            "secret_key": '79160acb652d809728af'
+          }
+      - get:
+          url: '/trans/get-trans/670796c1fcb0e56ae48ab749/app1/dev'
+          headers: {
+            "secret_key": '79160acb652d809728af'
+          }
+      
