@@ -64,7 +64,7 @@ route.get('/users', VerifyToken, async (req, res) => {
     }
 });
 
-/*********************************Get One Users*********************************/
+/*********************************Get One User*********************************/
 route.get('/user/:id', VerifyToken, async (req, res) => {
     try{
         const user = await UserModel.findById(req.params.id);
