@@ -133,12 +133,6 @@ npm start
 
 ---
 
-## License
-
-This project is licensed under the MIT License.
-
----
-
 ## Credits
 
 - UI based on [Horizon UI (Chakra)](https://horizon-ui.com/horizon-ui-chakra)
